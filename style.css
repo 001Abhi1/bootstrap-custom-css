@@ -1,0 +1,463 @@
+body {
+  font-family: cursive;
+}
+.btn-mo{
+  background-color: black;
+  color: #ede5e5
+  ;
+}
+.btn-mo:hover{
+  background-color: black;
+  color: #ede5e5
+  ;
+}
+.mo-bg{
+  background: black;
+}
+/* .modal-1{
+  background:black;
+} */
+.mo-1{
+  background:linear-gradient(45deg,purple,red,blue);
+}
+.header-1{
+  font-family: 'Sofia',cursive;
+  font-size:50px;
+}
+.header-1 span {
+  background: linear-gradient(#ede5e5, rgb(245, 245, 245));
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 0%;
+}
+
+.header-1 span:first-child {
+  animation: textcolor1 2s linear infinite alternate;
+}
+.header-1 span:last-child {
+  animation: textcolor2 2s linear infinite alternate;
+}
+
+@keyframes textcolor1  {
+  0% {
+    background-size: 0%;
+  }
+  40% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 100%; /* Reset back to 0% to create the alternating effect */
+  }
+}
+@keyframes textcolor2  {
+  0% {
+    background-size: 0%;
+  }
+  40% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 100%; /* Reset back to 0% to create the alternating effect */
+  }
+}
+
+  
+
+
+
+ /* .infinite-translate {
+  font-weight: 700;
+  color: rgb(122, 122, 252);
+  animation: infiniteTranslate 2s  infinite;
+}
+
+@keyframes infiniteTranslate {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(70%); /* Adjust distance as needed */
+ /* }
+}   */
+
+
+
+
+
+.card-ani {
+  opacity: 0;
+  transform: translatex(50px);
+  transition: opacity 0.5s, transform 1s;
+}
+.card-ani.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.img-f {
+  height: 100px;
+}
+.img-f2 {
+  margin-top: 13px;
+}
+.text-h1 {
+  color: rgb(90, 210, 210);
+}
+.tog {
+  
+  border-radius: 5px;
+  background: linear-gradient(45deg, rgb(121, 172, 247), rgb(1, 1, 102));
+}
+
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0px 8px 8px rgba(117, 62, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0px 8px 8px rgba(82, 108, 254, 0.5);
+  }
+  100% {
+    box-shadow: 0 0px 8px 8px rgba(56, 247, 225, 0.5);
+  }
+}
+
+.af-1 {
+  padding: 10px;
+  border-radius: 10px;
+  color: aqua;
+  font-family: "Sofia", cursive;
+
+  animation: shadowPulse 2s infinite;
+}
+.af-1:hover {
+  color: aqua;
+}
+
+.nav-a {
+  color: aliceblue;
+}
+
+.bg-show {
+  background: linear-gradient(
+    90deg,
+    rgb(81, 81, 82),
+    rgb(70, 196, 254),
+    rgb(135, 134, 134)
+  );
+}
+/* .af-1 {
+  color: white;
+} */
+/* .af-1:hover {
+  font-family: "Sofia", cursive;
+  color: rgb(6, 242, 242);
+  font-weight: 600;
+  font-size: larger;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgb(107, 43, 226);
+} */
+
+.nav-link-a:hover {
+  font-family: "Sofia", cursive;
+  background-color: black;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 3px rgb(107, 43, 226);
+}
+.nav-a:hover {
+  color: aqua;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 55px;
+}
+
+.map {
+  border-radius: 25px;
+}
+.f-btn {
+  padding: 10px;
+  margin: 5px;
+}
+.ar-btn {
+  background: white;
+  padding: 5px;
+  border-radius: 50%;
+  color: black;
+}
+.ar-btn-1 {
+  padding: 5px;
+}
+
+.ar-btn:hover {
+  background: black;
+  color: aliceblue;
+  box-shadow: 0px 0px 5px 1px rgb(107, 43, 226);
+}
+/* Media queries */
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .af-1 {
+    font-family: "Sofia", cursive;
+    color: aqua;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px rgb(37, 1, 102);
+  } */
+ 
+  .tog {
+    
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgb(121, 172, 247), rgb(1, 1, 102));
+  }
+
+  .ar-btn {
+    background: black;
+    color: aliceblue;
+    box-shadow: 0px 0px 5px 1px rgb(107, 43, 226);
+  }
+  .btn-custom {
+   margin-top: 10px; 
+   
+  }
+  .img-f2 {
+    margin-top: 10%;
+  }
+
+  .nav-a {
+    color: aqua;
+  }
+  .bg-1 {
+    box-shadow: 0px 0px 10px 2px rgb(223, 211, 247);
+  }
+  .nav-link-a {
+    font-family: "Sofia", cursive;
+    text-align: center;
+
+    background-color: black;
+    margin: 17px 0px 0px 2px;
+    padding: 2px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 4px rgb(37, 1, 102);
+  }
+  .card-1 {
+    box-shadow: 0px 0px 10px 5px rgb(89, 3, 248);
+    border: 1px solid black;
+  }
+  .card-2 {
+    box-shadow: 0px 0px 10px 5px rgb(223, 211, 247);
+    border: 1px solid black;
+    margin-top: 20px;
+  }
+  .card-3 {
+    box-shadow: 0px 0px 10px 5px rgb(6, 203, 247);
+    border: 1px solid black;
+    margin-top: 20px;
+  }
+  .btn-1 {
+    box-shadow: 0px 0px 3px 4px rgb(10, 29, 158);
+  }
+  .btn-2 {
+    box-shadow: 0px 0px 3px 4px rgb(246, 247, 248);
+  }
+  .btn-3 {
+    box-shadow: 0px 0px 3px 4px rgb(3, 79, 102);
+  }
+  .btn-custom {
+    color: black;
+    background-color: rgb(185, 93, 247);
+    box-shadow: 0px 0px 5px 5px rgb(107, 43, 226);
+  }
+  .btn-n {
+    box-shadow: 0px 0px 3px 3px rgb(37, 65, 248);
+    font-family: "sofia", cursive;
+    color: black;
+  }
+}
+
+.btn-custom {
+  color: aquamarine;
+  background: black;
+}
+
+.btn-custom:hover {
+  color: black;
+  background-color: rgb(185, 93, 247);
+  box-shadow: 0px 0px 5px 5px rgb(107, 43, 226);
+}
+
+.bg-custom {
+  background: linear-gradient(90deg, rgba(7, 7, 7, 0.18), rgb(9, 9, 9));
+  box-shadow: 0px 0px 20px 5px rgb(52, 162, 247);
+}
+.card-section {
+  background-color: black;
+}
+.card-1 {
+  background: linear-gradient(45deg, rgb(236, 145, 207), blue);
+  border-radius: 40px;
+}
+.card-1:hover {
+  box-shadow: 0px 0px 10px 5px rgb(89, 3, 248);
+  border: 1px solid black;
+}
+.card-2 {
+  background: linear-gradient(45deg, white, black);
+  border-radius: 40px;
+}
+.card-2:hover {
+  box-shadow: 0px 0px 10px 5px rgb(223, 211, 247);
+  border: 1px solid black;
+}
+.card-3 {
+  background: linear-gradient(45deg, rgb(77, 182, 252), rgb(89, 249, 225));
+  border-radius: 40px;
+}
+.card-3:hover {
+  box-shadow: 0px 0px 10px 5px rgb(6, 203, 247);
+  border: 1px solid black;
+}
+/* .nav-1 {
+  background: linear-gradient(
+    45deg,
+    rgb(19, 19, 19),
+    rgb(128, 128, 250),
+    rgb(83, 238, 252),
+    rgb(106, 106, 106)
+  )}; */
+.nav-1 {
+  background-color: black;
+}
+
+.btn-c-1:hover {
+  background-color: blueviolet;
+}
+#learn {
+  background: linear-gradient(135deg, red, blue);
+  box-shadow: 0px 0px 20px 5px rgb(52, 162, 247);
+}
+#questions {
+  background-color: black;
+}
+
+.accordion-button {
+  background: linear-gradient(45deg, blue, red);
+}
+.aq-1 {
+  background: linear-gradient(45deg, blue, red);
+  font-weight: 400;
+}
+
+#instructors {
+  background: linear-gradient(45deg, black, blueviolet);
+  box-shadow: 0px 0px 20px 5px rgb(52, 162, 247);
+}
+
+.bg-1 {
+  background-color: black;
+  border-radius: 30px;
+}
+.bg-1:hover {
+  box-shadow: 0px 0px 20px 5px rgb(223, 211, 247);
+  cursor: pointer;
+}
+
+.bg-foot {
+  background-color: black;
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: black;
+}
+.li-1 {
+  background-color: rgb(156, 156, 253);
+}
+
+.a-1 {
+  text-decoration: none;
+
+  font-weight: 400;
+  color: white;
+}
+.btn-1 {
+  padding: 7px;
+  border-radius: 5px;
+  background-color: rgb(32, 83, 248);
+
+  border: 0;
+}
+.btn-1:hover {
+  box-shadow: 0px 0px 3px 4px rgb(10, 29, 158);
+}
+.a-2 {
+  text-decoration: none;
+  color: beige;
+  font-weight: 400;
+}
+.btn-2 {
+  padding: 7px;
+  border-radius: 5px;
+  background-color: black;
+
+  border: 0;
+}
+.btn-2:hover {
+  box-shadow: 0px 0px 3px 4px rgb(246, 247, 248);
+}
+.a-3 {
+  text-decoration: none;
+  color: beige;
+  font-weight: 400;
+}
+.btn-3 {
+  padding: 7px;
+  border-radius: 5px;
+  background-color: rgb(3, 143, 208);
+
+  border: 0;
+}
+.btn-3:hover {
+  box-shadow: 0px 0px 3px 4px rgb(3, 79, 102);
+}
+
+.btn-n {
+  border: 1px solid black;
+  color: rgb(22, 22, 22);
+  padding: 8px;
+  border-radius: 0px 5px 5px 0px;
+  background: linear-gradient(
+    135deg,
+    rgb(245, 57, 57),
+    rgb(106, 198, 248),
+    rgb(60, 60, 252)
+  );
+  border: 0;
+}
+
+.btn-n:hover {
+  box-shadow: 0px 0px 3px 3px rgb(61, 85, 241);
+  font-family: "sofia", cursive;
+  color: black;
+}
+.contact {
+  background-color: rgb(40, 1, 75);
+  box-shadow: 0px 0px 20px 5px rgb(52, 162, 247);
+}
+
+footer {
+  font-family: "Sofia", cursive;
+  box-shadow: 0px 0px 20px 5px rgb(52, 162, 247);
+}
