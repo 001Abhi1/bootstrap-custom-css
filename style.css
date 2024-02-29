@@ -1,6 +1,12 @@
 body {
   font-family: cursive;
 }
+#show-case{
+  
+    
+    -moz-padding:5px; /* Firefox */
+
+}
 .btn-mo{
   background-color: black;
   color: #ede5e5
@@ -61,28 +67,6 @@ body {
     background-size: 100%; /* Reset back to 0% to create the alternating effect */
   }
 }
-
-  
-
-
-
- /* .infinite-translate {
-  font-weight: 700;
-  color: rgb(122, 122, 252);
-  animation: infiniteTranslate 2s  infinite;
-}
-
-@keyframes infiniteTranslate {
-  0% {
-    transform: translateY(0%);
-  }
-
-  100% {
-    transform: translateY(70%); /* Adjust distance as needed */
- /* }
-}   */
-
-
 
 
 
@@ -147,18 +131,7 @@ body {
     rgb(135, 134, 134)
   );
 }
-/* .af-1 {
-  color: white;
-} */
-/* .af-1:hover {
-  font-family: "Sofia", cursive;
-  color: rgb(6, 242, 242);
-  font-weight: 600;
-  font-size: larger;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 5px rgb(107, 43, 226);
-} */
+
 
 .nav-link-a:hover {
   font-family: "Sofia", cursive;
@@ -208,14 +181,7 @@ body::before {
 }
 
 @media (max-width: 768px) {
-  /* .af-1 {
-    font-family: "Sofia", cursive;
-    color: aqua;
-    background-color: black;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 3px 3px rgb(37, 1, 102);
-  } */
+ 
  
   .tog {
     
@@ -329,14 +295,7 @@ body::before {
   box-shadow: 0px 0px 10px 5px rgb(6, 203, 247);
   border: 1px solid black;
 }
-/* .nav-1 {
-  background: linear-gradient(
-    45deg,
-    rgb(19, 19, 19),
-    rgb(128, 128, 250),
-    rgb(83, 238, 252),
-    rgb(106, 106, 106)
-  )}; */
+
 .nav-1 {
   background-color: black;
 }
