@@ -178,8 +178,15 @@ body::before {
 }
 
 @media (max-width: 768px) {
+  body {
+    font-family: "Kaushan Script", cursive;
+  }
+  .bg-custom{
+    font-family: "Honk", system-ui;
+  }
  
- 
+
+
   .tog {
     
     border-radius: 5px;
