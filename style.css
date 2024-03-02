@@ -1,7 +1,9 @@
 body {
-  font-family: cursive;
+  font-family: "Kaushan Script", cursive;
 }
-
+.bg-custom{
+  font-family: "Honk", system-ui;
+}
 .btn-mo{
   background-color: black;
   color: #ede5e5
